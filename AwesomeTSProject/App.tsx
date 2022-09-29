@@ -14,27 +14,35 @@ import {StyleSheet, Text, View} from 'react-native';
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Hello</Text>
+      <View style={styles.square}>
+        <Text style={styles.title}>Hello</Text>
+      </View>
     </View>
-  )
+  );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 24,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
-  title: {
-    marginTop: 16,
-    paddingVertical: 8,
-    borderWidth: 2,
+  square: {
+    width: 200,
+    height: 200,
     borderColor: '#20232a',
     borderRadius: 6,
     backgroundColor: '#FF0000', //red
-    color: '#00FF00',
-    textAlign: 'center',
+    borderWidth: 2,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  title: {
     fontSize: 30,
     fontWeight: 'bold',
+    color: '#00FF00', //green
+    textAlign: 'center',
   },
 });
 
