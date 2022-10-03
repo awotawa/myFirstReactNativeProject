@@ -40,7 +40,22 @@ const extractPokemonOrder = (url: string) => {
   return arrMatch[0];
 };
 
-const Pokemons = require('./pokemons.json');
+const adaptPokemon = (pokemonData: PokemonData[]): Pokemon[] => {
+  return pokemonData.map(data => {
+    const id = extractPokemonOrder(data.url);
+    return {
+      name: data.name,
+      detailUrl: data.url,
+      imageUrl: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`,
+    };
+  });
+};
+
+const Pokemons = adaptPokemon(require('./pokemons.json'));
+
+interface PokemonDetailProps {
+  item: Pokemon;
+}
 
 const App = () => {
   return (
