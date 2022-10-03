@@ -18,6 +18,18 @@ import {
   FlatList,
   StatusBar,
 } from 'react-native';
+
+interface PokemonData {
+  name: string;
+  url: string;
+}
+
+interface Pokemon {
+  name: string;
+  detailUrl: string;
+  imageUrl: string;
+}
+
 const extractPokemonOrder = (url: string) => {
   // Other regex possible https://regex101.com/r/hm09P8/1
   const regex = /(?<=\/v2\/pokemon\/)\d+(?=\/$)/;
