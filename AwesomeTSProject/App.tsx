@@ -9,7 +9,7 @@
  */
 
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 const Pokemons = require('./pokemons.json');
 
@@ -18,6 +18,22 @@ const App = () => {
     <View style={styles.container}>
       <View style={styles.square}>
         <Text style={styles.title}>Hello</Text>
+      </View>
+    </View>
+  );
+};
+
+const ListComponent = () => {
+  return (
+    <View style={styles.container}>
+      <View style={styles.card}>
+        <Image
+          style={styles.officialImg}
+          source={{
+            uri: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/662.png',
+          }}
+        />
+        <Text style={styles.name}>Fletchinder</Text>
       </View>
     </View>
   );
@@ -46,6 +62,24 @@ const styles = StyleSheet.create({
     color: '#00FF00', //green
     textAlign: 'center',
   },
+  card: {
+    width: 300,
+    height: 200,
+    borderColor: '#20232a',
+    borderRadius: 6,
+    borderWidth: 2,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  officialImg: {
+    width: 150,
+    height: 150,
+  },
+  name: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
 });
 
-export default App;
+export default ListComponent;
