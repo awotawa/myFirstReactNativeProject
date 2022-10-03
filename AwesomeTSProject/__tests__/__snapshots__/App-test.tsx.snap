@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<View
+<RCTSafeAreaView
   style={
     Object {
       "alignItems": "center",
@@ -11,32 +11,686 @@ exports[`renders correctly 1`] = `
     }
   }
 >
-  <View
-    style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#FF0000",
-        "borderColor": "#20232a",
-        "borderRadius": 6,
-        "borderWidth": 2,
-        "height": 200,
-        "justifyContent": "center",
-        "width": 200,
-      }
-    }
-  >
-    <Text
-      style={
+  <RCTScrollView
+    data={
+      Array [
         Object {
-          "color": "#00FF00",
-          "fontSize": 30,
-          "fontWeight": "bold",
-          "textAlign": "center",
+          "detailUrl": "https://pokeapi.co/api/v2/pokemon/1/",
+          "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+          "name": "bulbasaur",
+        },
+        Object {
+          "detailUrl": "https://pokeapi.co/api/v2/pokemon/2/",
+          "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png",
+          "name": "ivysaur",
+        },
+        Object {
+          "detailUrl": "https://pokeapi.co/api/v2/pokemon/3/",
+          "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png",
+          "name": "venusaur",
+        },
+        Object {
+          "detailUrl": "https://pokeapi.co/api/v2/pokemon/4/",
+          "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
+          "name": "charmander",
+        },
+        Object {
+          "detailUrl": "https://pokeapi.co/api/v2/pokemon/5/",
+          "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png",
+          "name": "charmeleon",
+        },
+        Object {
+          "detailUrl": "https://pokeapi.co/api/v2/pokemon/6/",
+          "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png",
+          "name": "charizard",
+        },
+        Object {
+          "detailUrl": "https://pokeapi.co/api/v2/pokemon/7/",
+          "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
+          "name": "squirtle",
+        },
+        Object {
+          "detailUrl": "https://pokeapi.co/api/v2/pokemon/8/",
+          "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png",
+          "name": "wartortle",
+        },
+        Object {
+          "detailUrl": "https://pokeapi.co/api/v2/pokemon/9/",
+          "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png",
+          "name": "blastoise",
+        },
+        Object {
+          "detailUrl": "https://pokeapi.co/api/v2/pokemon/10/",
+          "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png",
+          "name": "caterpie",
+        },
+        Object {
+          "detailUrl": "https://pokeapi.co/api/v2/pokemon/11/",
+          "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png",
+          "name": "metapod",
+        },
+        Object {
+          "detailUrl": "https://pokeapi.co/api/v2/pokemon/12/",
+          "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png",
+          "name": "butterfree",
+        },
+        Object {
+          "detailUrl": "https://pokeapi.co/api/v2/pokemon/13/",
+          "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/13.png",
+          "name": "weedle",
+        },
+        Object {
+          "detailUrl": "https://pokeapi.co/api/v2/pokemon/14/",
+          "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png",
+          "name": "kakuna",
+        },
+        Object {
+          "detailUrl": "https://pokeapi.co/api/v2/pokemon/15/",
+          "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/15.png",
+          "name": "beedrill",
+        },
+        Object {
+          "detailUrl": "https://pokeapi.co/api/v2/pokemon/16/",
+          "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png",
+          "name": "pidgey",
+        },
+        Object {
+          "detailUrl": "https://pokeapi.co/api/v2/pokemon/17/",
+          "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/17.png",
+          "name": "pidgeotto",
+        },
+        Object {
+          "detailUrl": "https://pokeapi.co/api/v2/pokemon/18/",
+          "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/18.png",
+          "name": "pidgeot",
+        },
+        Object {
+          "detailUrl": "https://pokeapi.co/api/v2/pokemon/19/",
+          "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/19.png",
+          "name": "rattata",
+        },
+        Object {
+          "detailUrl": "https://pokeapi.co/api/v2/pokemon/20/",
+          "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/20.png",
+          "name": "raticate",
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    viewabilityConfigCallbackPairs={Array []}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "marginTop": 0,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "borderColor": "#20232a",
+                "borderRadius": 6,
+                "borderWidth": 2,
+                "height": 200,
+                "justifyContent": "center",
+                "marginHorizontal": 16,
+                "marginVertical": 8,
+                "padding": 20,
+                "width": 300,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 150,
+                  "width": 150,
+                }
+              }
+            />
+            <Text
+              style={
+                Object {
+                  "fontSize": 25,
+                  "fontWeight": "bold",
+                  "textAlign": "center",
+                }
+              }
+            >
+              Bulbasaur
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "marginTop": 0,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "borderColor": "#20232a",
+                "borderRadius": 6,
+                "borderWidth": 2,
+                "height": 200,
+                "justifyContent": "center",
+                "marginHorizontal": 16,
+                "marginVertical": 8,
+                "padding": 20,
+                "width": 300,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 150,
+                  "width": 150,
+                }
+              }
+            />
+            <Text
+              style={
+                Object {
+                  "fontSize": 25,
+                  "fontWeight": "bold",
+                  "textAlign": "center",
+                }
+              }
+            >
+              Ivysaur
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "marginTop": 0,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "borderColor": "#20232a",
+                "borderRadius": 6,
+                "borderWidth": 2,
+                "height": 200,
+                "justifyContent": "center",
+                "marginHorizontal": 16,
+                "marginVertical": 8,
+                "padding": 20,
+                "width": 300,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 150,
+                  "width": 150,
+                }
+              }
+            />
+            <Text
+              style={
+                Object {
+                  "fontSize": 25,
+                  "fontWeight": "bold",
+                  "textAlign": "center",
+                }
+              }
+            >
+              Venusaur
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "marginTop": 0,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "borderColor": "#20232a",
+                "borderRadius": 6,
+                "borderWidth": 2,
+                "height": 200,
+                "justifyContent": "center",
+                "marginHorizontal": 16,
+                "marginVertical": 8,
+                "padding": 20,
+                "width": 300,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 150,
+                  "width": 150,
+                }
+              }
+            />
+            <Text
+              style={
+                Object {
+                  "fontSize": 25,
+                  "fontWeight": "bold",
+                  "textAlign": "center",
+                }
+              }
+            >
+              Charmander
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "marginTop": 0,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "borderColor": "#20232a",
+                "borderRadius": 6,
+                "borderWidth": 2,
+                "height": 200,
+                "justifyContent": "center",
+                "marginHorizontal": 16,
+                "marginVertical": 8,
+                "padding": 20,
+                "width": 300,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 150,
+                  "width": 150,
+                }
+              }
+            />
+            <Text
+              style={
+                Object {
+                  "fontSize": 25,
+                  "fontWeight": "bold",
+                  "textAlign": "center",
+                }
+              }
+            >
+              Charmeleon
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "marginTop": 0,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "borderColor": "#20232a",
+                "borderRadius": 6,
+                "borderWidth": 2,
+                "height": 200,
+                "justifyContent": "center",
+                "marginHorizontal": 16,
+                "marginVertical": 8,
+                "padding": 20,
+                "width": 300,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 150,
+                  "width": 150,
+                }
+              }
+            />
+            <Text
+              style={
+                Object {
+                  "fontSize": 25,
+                  "fontWeight": "bold",
+                  "textAlign": "center",
+                }
+              }
+            >
+              Charizard
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "marginTop": 0,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "borderColor": "#20232a",
+                "borderRadius": 6,
+                "borderWidth": 2,
+                "height": 200,
+                "justifyContent": "center",
+                "marginHorizontal": 16,
+                "marginVertical": 8,
+                "padding": 20,
+                "width": 300,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 150,
+                  "width": 150,
+                }
+              }
+            />
+            <Text
+              style={
+                Object {
+                  "fontSize": 25,
+                  "fontWeight": "bold",
+                  "textAlign": "center",
+                }
+              }
+            >
+              Squirtle
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "marginTop": 0,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "borderColor": "#20232a",
+                "borderRadius": 6,
+                "borderWidth": 2,
+                "height": 200,
+                "justifyContent": "center",
+                "marginHorizontal": 16,
+                "marginVertical": 8,
+                "padding": 20,
+                "width": 300,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 150,
+                  "width": 150,
+                }
+              }
+            />
+            <Text
+              style={
+                Object {
+                  "fontSize": 25,
+                  "fontWeight": "bold",
+                  "textAlign": "center",
+                }
+              }
+            >
+              Wartortle
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "marginTop": 0,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "borderColor": "#20232a",
+                "borderRadius": 6,
+                "borderWidth": 2,
+                "height": 200,
+                "justifyContent": "center",
+                "marginHorizontal": 16,
+                "marginVertical": 8,
+                "padding": 20,
+                "width": 300,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 150,
+                  "width": 150,
+                }
+              }
+            />
+            <Text
+              style={
+                Object {
+                  "fontSize": 25,
+                  "fontWeight": "bold",
+                  "textAlign": "center",
+                }
+              }
+            >
+              Blastoise
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "marginTop": 0,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "borderColor": "#20232a",
+                "borderRadius": 6,
+                "borderWidth": 2,
+                "height": 200,
+                "justifyContent": "center",
+                "marginHorizontal": 16,
+                "marginVertical": 8,
+                "padding": 20,
+                "width": 300,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 150,
+                  "width": 150,
+                }
+              }
+            />
+            <Text
+              style={
+                Object {
+                  "fontSize": 25,
+                  "fontWeight": "bold",
+                  "textAlign": "center",
+                }
+              }
+            >
+              Caterpie
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 0,
+          }
         }
-      }
-    >
-      Hello
-    </Text>
-  </View>
-</View>
+      />
+    </View>
+  </RCTScrollView>
+</RCTSafeAreaView>
 `;
