@@ -58,12 +58,18 @@ interface PokemonDetailProps {
 }
 
 const App = () => {
+  const renderItem = ({ item }: PokemonDetailProps) => (
+    <PokemonDetail item={item} />
+  );
+
   return (
-    <View style={styles.container}>
-      <View style={styles.square}>
-        <Text style={styles.title}>Hello</Text>
-      </View>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <FlatList
+        data={Pokemons}
+        renderItem={renderItem}
+        keyExtractor={item => item.detailUrl}
+      />
+    </SafeAreaView>
   );
 
   // return (
