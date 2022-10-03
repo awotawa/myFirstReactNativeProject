@@ -21,6 +21,14 @@ const App = () => {
       </View>
     </View>
   );
+
+  // return (
+  //   <View style={styles.container}>
+  //     <View style={styles.square}>
+  //       <Text style={styles.title}>Hello</Text>
+  //     </View>
+  //   </View>
+  // );
 };
 
 const ListComponent = () => {
