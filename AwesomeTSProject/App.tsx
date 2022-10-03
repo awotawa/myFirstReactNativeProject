@@ -82,4 +82,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ListComponent;
+export default App;
