@@ -9,6 +9,15 @@
  */
 
 import React from 'react';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  SafeAreaView,
+  FlatList,
+  StatusBar,
+} from 'react-native';
 const extractPokemonOrder = (url: string) => {
   // Other regex possible https://regex101.com/r/hm09P8/1
   const regex = /(?<=\/v2\/pokemon\/)\d+(?=\/$)/;
