@@ -39,20 +39,20 @@ const App = () => {
   // );
 };
 
-const ListComponent = () => {
-  return (
-    <View style={styles.container}>
+const PokemonDetail = ({ item }: PokemonDetailProps) => (
+  <View style={styles.listContainer}>
       <View style={styles.card}>
         <Image
           style={styles.officialImg}
           source={{
-            uri: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/662.png',
+          uri: item.imageUrl,
           }}
         />
-        <Text style={styles.name}>Fletchinder</Text>
+      <Text style={styles.name}>{capitalizeFirstLetter(item.name)}</Text>
       </View>
     </View>
   );
+
 const capitalizeFirstLetter = (string: string) => {
   return string.charAt(0).toUpperCase() + string.slice(1);
 };
