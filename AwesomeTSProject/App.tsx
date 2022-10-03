@@ -83,23 +83,27 @@ const App = () => {
 
 const PokemonDetail = ({ item }: PokemonDetailProps) => (
   <View style={styles.listContainer}>
-      <View style={styles.card}>
-        <Image
-          style={styles.officialImg}
-          source={{
+    <View style={styles.card}>
+      <Image
+        style={styles.officialImg}
+        source={{
           uri: item.imageUrl,
-          }}
-        />
+        }}
+      />
       <Text style={styles.name}>{capitalizeFirstLetter(item.name)}</Text>
-      </View>
     </View>
-  );
+  </View>
+);
 
 const capitalizeFirstLetter = (string: string) => {
   return string.charAt(0).toUpperCase() + string.slice(1);
 };
 
 const styles = StyleSheet.create({
+  listContainer: {
+    flex: 1,
+    marginTop: StatusBar.currentHeight || 0,
+  },
   container: {
     flex: 1,
     padding: 24,
@@ -130,6 +134,9 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     justifyContent: 'center',
     alignItems: 'center',
+    padding: 20,
+    marginVertical: 8,
+    marginHorizontal: 16,
   },
   officialImg: {
     width: 150,
