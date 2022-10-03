@@ -11,6 +11,8 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+const Pokemons = require('./pokemons.json');
+
 const App = () => {
   return (
     <View style={styles.container}>
